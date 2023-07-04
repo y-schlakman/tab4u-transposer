@@ -1,0 +1,20 @@
+{
+    "name": "Tab4u transposer",
+    "version": "1.0.0",
+    "description": "A tab4u transposing extension",
+    "manifest_version": 3,
+    "author": "Yodaman",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Tab4u transposer"
+    },
+	"content_scripts": [
+		{
+			"matches": ["https://*.tab4u.com/*"],
+			"js": ["transpose.js"]
+		}
+	],
+	"permissions": [
+		"tabs"
+	]
+}
